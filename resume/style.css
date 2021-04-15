@@ -206,7 +206,7 @@ section {
 
 
 .about .title::after {
-    content: 'кто я';
+    content: 'who i am';
 }
 
 .about .about-content, .services .serv-content {
@@ -278,7 +278,7 @@ section {
 
 .services .title::after{
     background: #111;
-    content: "что я знаю";
+    content: "what i know";
 }
 
 .services .serv-content .card {
@@ -323,7 +323,7 @@ section {
 /* projects section styling */
 
 .projects .title::after {
-    content: "что я делаю";
+    content: "what am i doing";
     background: #111;
 }
 

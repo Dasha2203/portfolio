@@ -32,7 +32,7 @@ body {
 }
 
 section {
-
+    overflow: hidden;
 }
 
 .container {
@@ -806,7 +806,7 @@ position: relative;
 .footer .footer__forest-two {
     top: 50px;
     left: 0;
-    width: 100%;
+    width: 102%;
 }
 
 .footer .footer__forest-one {
@@ -876,4 +876,24 @@ position: relative;
     text-transform: uppercase;
     text-align: center;
     margin-top: 30px;
+}
+
+@media (max-width: 1400px) {
+    .discover__form-container {
+        right: 0;
+    }
+
+    .footer .footer__forest-two {
+        top: 100px;
+    }
+
+    .footer .footer__sun {
+        top: 150px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .footer .footer__forest-two {
+        top: 200px;
+    }
 }
