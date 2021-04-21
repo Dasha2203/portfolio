@@ -14,8 +14,7 @@ function cloneCard(classCard, height) {
     return div;
 }
 
-document.addEventListener('mousedown', function(event) {
-    
+function draggableCard(event) {
     let card = event.target.closest('.wrapper-columns__card');
     if (!card) return;
 
@@ -62,8 +61,9 @@ document.addEventListener('mousedown', function(event) {
         }
     }
         
-    document.addEventListener('mousemove',onMouseMove)
-    document.onmouseup = function(event) {
+    document.addEventListener('mousemove',onMouseMove);
+    document.addEventListener('touchmove',onMouseMove);
+    function onMouseUp(event) {
         card.hidden = true;
         card.classList.remove('d-flex');
         let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
@@ -77,10 +77,14 @@ document.addEventListener('mousedown', function(event) {
         document.removeEventListener('mousemove', onMouseMove);
         document.onmouseup = null;
         card.classList.remove('draggable')
-    };
+    }
+    document.onmouseup = onMouseUp;
+    document.addEventListener('touchend',onMouseUp);
 
     document.ondragstart = function() {
         return false;
     }; 
-    
-})
+}
+
+document.addEventListener('mousedown', draggableCard)
+document.addEventListener('touchstart',draggableCard)
