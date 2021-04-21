@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center justify-content-between">
+            <div class="header__left-menu header__menu">
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#ECEFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 22V12H15V22" stroke="#ECEFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>    
+                </a>
+                <a href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 3H3V10H8V3Z" stroke="#ECEFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 3H12V10H21V3Z" stroke="#ECEFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 14H12V21H21V14Z" stroke="#ECEFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 14H3V21H8V14Z" stroke="#ECEFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>  
+                    Jobs
+                </a>
+            </div>
+            <div class="header__center-menu d-flex align-items-center">
+                <div class="logo">
+                    <a href="#">
+                        <svg width="40" height="42" viewBox="0 0 40 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9486 0.933899H27.9354C34.4672 0.933899 39.8133 6.33183 39.8133 12.9272V29.0695C39.8133 35.6648 34.4672 41.0627 27.9354 41.0627H11.9486C5.41678 41.0627 0.0706482 35.6648 0.0706482 29.0695V12.9272C0.0706482 6.33183 5.41678 0.933899 11.9486 0.933899Z" fill="#FEFEFE"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0149 3.31458C37.9209 5.50495 39.8125 9.00333 39.8125 12.9272V24.0763C34.7647 18.0276 34.703 9.66425 35.0149 3.31458ZM11.9478 0.93396H23.0342C19.2303 5.16228 14.4118 9.76796 5.98147 12.6642C5.90947 12.6885 5.83423 12.7647 5.76222 12.8545C4.04532 11.3564 2.38666 9.95827 0.868484 8.61575C2.59233 4.13463 6.91695 0.93396 11.9478 0.93396Z" fill="#00CCFF"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M38.3562 34.8032C36.3343 38.5228 32.4139 41.0627 27.9347 41.0627H24.1446C23.3221 37.0939 22.0369 33.5852 20.4468 30.4466C26.5434 33.0937 32.7393 35.1319 38.3562 34.8032Z" fill="#33CC66"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.1452 41.0627C23.3055 37.0177 21.9862 33.4502 20.3585 30.2667C17.6647 32.7339 14.8066 34.7305 11.9692 35.6854C10.7594 36.0903 9.78954 35.5194 10.3447 34.6404C16.4894 24.8963 4.94033 17.3287 4.66972 14.8373C4.57712 13.993 4.97816 13.2075 5.69768 12.7991C4.00478 11.3182 2.36677 9.94089 0.869247 8.61572C0.355206 9.95479 0.0706482 11.4082 0.0706482 12.9271V29.0695C0.0706482 35.6648 5.41678 41.0627 11.9486 41.0627H24.1452Z" fill="#0000A2"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.0012 10.1867C35.3027 14.9931 36.4508 20.0449 39.8126 24.0762V29.0695C39.8126 31.1422 39.2815 33.0973 38.3562 34.8031C32.7394 35.1318 26.5433 33.0973 20.4502 30.4467C20.4195 30.3877 20.3885 30.3254 20.3578 30.2666C27.7428 23.4984 33.8635 13.1869 34.8058 11.1278C34.9464 10.8233 35.0081 10.5016 35.0012 10.1867ZM5.95401 12.6747C5.96431 12.6713 5.9746 12.6643 5.98149 12.6643C14.4118 9.7679 19.2301 5.16246 23.0341 0.933899H27.9347C30.5839 0.933899 33.0341 1.81964 35.0149 3.31452C34.912 5.39073 34.8503 7.68154 34.9908 10.0379C34.9395 9.52924 34.6996 9.04491 34.2918 8.68145C33.5927 8.0621 32.6126 7.98251 31.8244 8.48419L30.0937 9.58109C17.7567 18.1176 8.40097 11.7404 5.95401 12.6747Z" fill="#FF00FF"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1049 0.933899H23.0342C19.2303 5.16246 14.412 9.76796 5.98148 12.6643C5.90971 12.6885 5.83423 12.7646 5.76229 12.8547C5.12482 12.3009 4.49772 11.7577 3.88072 11.2283C8.01711 9.50495 12.7671 6.42539 16.1049 0.933899Z" fill="#52DCFF"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.1012 17.3149C33.0169 20.8617 35.7961 24.5399 39.8126 27.938V24.0762C36.4508 20.0451 35.3028 14.993 35.0012 10.1867C35.0078 10.5015 34.9462 10.8233 34.8058 11.1279C34.4049 12.0033 33.0718 14.3668 31.1012 17.3149ZM26.9272 0.933838H27.9347C30.5837 0.933838 33.0341 1.81983 35.0147 3.3147C34.912 5.39067 34.8504 7.68148 34.9909 10.038C34.9396 9.52918 34.6995 9.04485 34.2918 8.68157C33.5927 8.06204 32.6125 7.98245 31.8244 8.48431L30.0937 9.58122C29.5111 9.98595 28.9319 10.3564 28.363 10.6953C27.0745 6.39076 26.9032 2.80257 26.9272 0.933838Z" fill="#FF63FF"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1405 28.8065C12.1267 21.9378 4.88209 16.8063 4.66972 14.8373C4.57712 13.993 4.97816 13.2075 5.69768 12.7993C4.00478 11.3183 2.36677 9.94108 0.869003 8.61566C0.355206 9.95498 0.0706482 11.4082 0.0706482 12.9273V21.6056C2.62032 22.5365 7.25363 24.6266 12.1405 28.8065ZM24.1452 41.0627C23.3055 37.0177 21.9862 33.4502 20.3585 30.2667C19.1488 31.374 17.9081 32.388 16.647 33.2529C18.5899 35.4606 20.4818 38.0453 22.2089 41.0627H24.1452Z" fill="#3A3AC7"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M38.3562 34.8032C38.0854 35.3014 37.7804 35.7755 37.4479 36.2253C30.7963 37.3775 24.9191 36.125 22.6023 35.4987C21.9752 33.7132 21.2486 32.0315 20.4468 30.4466C26.5434 33.0937 32.7393 35.1319 38.3562 34.8032Z" fill="#5FE68C"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.1012 17.3148C31.1012 17.3148 29.7441 27.4293 25.8647 32.5921C23.9388 31.9137 21.4439 30.8791 20.4502 30.4466C20.4193 30.3878 20.3885 30.3255 20.3576 30.2667C24.6036 26.3739 28.435 21.308 31.1012 17.3148Z" fill="#D100D1"/>
+                        </svg>
+                            
+                    </a>
+                </div>
+                <div class="header__center-menu--description ">
+                    <div class="center-menu__title">
+                        <h2 class="d-flex align-items-center">03. UI / UX Designer
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="#ECEFF1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </h2>
+                    </div>
+                    <div class="center-menu__paragraph d-flex align-items-center">
+                        <div class="center-menu__status online"></div>
+                        <p>Working | created 16 Mar 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__right-menu d-flex align-items-center">
+                <div class="right-menu__notification">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z" stroke="#ECEFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21" stroke="#ECEFF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="right-menu__profile d-flex align-items-center">
+                    <div class="profile__avatar">
+                        <img src="./assets/img/avatar.jpg" alt="avatar">
+                    </div>
+                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="#ECEFF1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                        
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <section class="section">
+            <div class="container">
+                <div class="wrapper-columns d-flex" id="columns">
+                    <div class="wrapper-columns__item">
+                        <div class="wrapper-columns__filter d-flex align-items-center justify-content-between">
+                            <h3 class="title-column">In process <span>27</span></h3>
+
+                            <div class="list-filter">
+                                Newest first
+                                <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L4 4.5L7 1.5" stroke="#889DA7" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-columns__item">
+                        <div class="wrapper-columns__filter d-flex align-items-center justify-content-between">
+                            <h3 class="title-column">In process <span>27</span></h3>
+
+                            <div class="list-filter">
+                                Newest first
+                                <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L4 4.5L7 1.5" stroke="#889DA7" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-columns__item">
+                        <div class="wrapper-columns__filter d-flex align-items-center justify-content-between">
+                            <h3 class="title-column">In process <span>27</span></h3>
+
+                            <div class="list-filter">
+                                Newest first
+                                <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L4 4.5L7 1.5" stroke="#889DA7" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-columns__card d-flex align-items-center">
+                            <div class="avatar">
+                                <img src="./assets/img/avatar.jpg" alt="avatar">
+                            </div>
+                            <div class="card-description">
+                                <h4 class="full-name">Jane Cooper</h4>
+                                <p class="id-user">ID: 009112</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-columns__create">
+                        <button id="create-column">Add column</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
