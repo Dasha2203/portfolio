@@ -62,7 +62,7 @@ function draggableCard(event) {
     }
         
     document.addEventListener('mousemove',onMouseMove);
-    document.addEventListener('touchmove',onMouseMove);
+    
     function onMouseUp(event) {
         card.hidden = true;
         card.classList.remove('d-flex');
@@ -76,10 +76,11 @@ function draggableCard(event) {
         oldColumn.removeChild(oldColumn.querySelector('.old-card'))
         document.removeEventListener('mousemove', onMouseMove);
         document.onmouseup = null;
+        document.removeEventListener('mouseup',onMouseUp)
         card.classList.remove('draggable')
     }
-    document.onmouseup = onMouseUp;
-    document.addEventListener('touchend',onMouseUp);
+    document.addEventListener('mouseup',onMouseUp);
+    
 
     document.ondragstart = function() {
         return false;
@@ -87,4 +88,3 @@ function draggableCard(event) {
 }
 
 document.addEventListener('mousedown', draggableCard)
-document.addEventListener('touchstart',draggableCard)
