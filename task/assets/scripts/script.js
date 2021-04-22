@@ -71,9 +71,13 @@ function draggableCard(event) {
         card.hidden = false;
         if (!elemBelow) return
         let droppableBelow = elemBelow.closest('.wrapper-columns__item');
+        if (!(droppableBelow == oldColumn)) {
+            droppableBelow.removeChild(droppableBelow.querySelector('.new-card'))
+        }
         droppableBelow.append(card)
-        droppableBelow.removeChild(droppableBelow.querySelector('.new-card'))
+        
         oldColumn.removeChild(oldColumn.querySelector('.old-card'))
+        
         document.removeEventListener('pointermove', onMouseMove);
         document.onpointerup = null;
         document.removeEventListener('pointerup',onMouseUp)
