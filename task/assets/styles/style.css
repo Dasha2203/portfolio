@@ -6,7 +6,7 @@
     text-decoration: none !important;
     font-family: 'Nunito', sans-serif;
     font-style: normal;
-    touch-action: none;
+    
 }
 
 
@@ -173,6 +173,7 @@
 
 .wrapper-columns__card.draggable {
     position: absolute;
+    user-select: none;
     z-index: 999;
     -webkit-transform: rotate(4deg);
         -ms-transform: rotate(4deg);
@@ -360,7 +361,5 @@
         padding-top: 200px;
     }
 
-    .wrapper-columns {
-        touch-action: none;
-    }
+    
 }

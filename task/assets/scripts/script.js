@@ -1,9 +1,9 @@
 const createColumnBtn = document.querySelector('#create-column');
+let columns = document.querySelector('.wrapper-columns')
 
 createColumnBtn.addEventListener('click',createColumn);
 function createColumn(event) {
     let column = document.querySelector('.wrapper-columns__item').cloneNode(true);
-    console.log(column)
     createColumnBtn.closest('.wrapper-columns__create').before(column)
 }
 
@@ -54,7 +54,7 @@ function draggableCard(event) {
             }
             currentDroppable = droppableBelow;
             if (currentDroppable) {
-                if( !currentDroppable.querySelector('.old-card')) {
+                if( !currentDroppable.querySelector('.old-card') && !currentDroppable.querySelector('.new-card')) {
                     droppableBelow.append(cloneCard('new-card',card.offsetHeight + 'px'))
                }
             }
@@ -69,21 +69,27 @@ function draggableCard(event) {
         let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
         card.classList.add('d-flex');
         card.hidden = false;
-        if (!elemBelow) return
+         if (!elemBelow) return
         let droppableBelow = elemBelow.closest('.wrapper-columns__item');
-        if (!(droppableBelow == oldColumn)) {
-            droppableBelow.removeChild(droppableBelow.querySelector('.new-card'))
-        }
-        droppableBelow.append(card)
+        
+         if (!(droppableBelow == oldColumn)) {
+             droppableBelow.removeChild(droppableBelow.querySelector('.new-card'))
+         }
+
+         droppableBelow.append(card)
         
         oldColumn.removeChild(oldColumn.querySelector('.old-card'))
         
         document.removeEventListener('pointermove', onMouseMove);
         document.onpointerup = null;
-        document.removeEventListener('pointerup',onMouseUp)
+        document.removeEventListener('pointerup', onMouseUp)
+        
+
         card.classList.remove('draggable')
+        
     }
     document.addEventListener('pointerup',onMouseUp);
+    document.addEventListener('pointercancel', onMouseUp)
     
 
     document.ondragstart = function() {
