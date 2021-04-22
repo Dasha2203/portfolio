@@ -8,6 +8,7 @@
     font-style: normal;
 }
 
+
 .h2,.h4,h4, .p, p, .h3, h3 {
     margin: 0;
 }
@@ -128,6 +129,7 @@
 .section .container {
     min-height: 100%;
     height: auto;
+    
 }
 
 /* columns section */
@@ -144,9 +146,10 @@
 .wrapper-columns__card {
     display: -webkit-box;
     display: -ms-flexbox;
+    
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
+    -ms-flex-align: center;
             align-items: center;
     width: 100%;
     max-width: 248px;
@@ -203,6 +206,7 @@
 .wrapper-columns {
     overflow-x: scroll;
     position: relative;
+    touch-action: none;
 }
 
 .wrapper-columns .wrapper-columns__item:not(:last-child):not(:first-child) {

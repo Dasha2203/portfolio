@@ -61,7 +61,7 @@ function draggableCard(event) {
         }
     }
         
-    document.addEventListener('mousemove',onMouseMove);
+    document.addEventListener('pointermove',onMouseMove);
     
     function onMouseUp(event) {
         card.hidden = true;
@@ -74,17 +74,18 @@ function draggableCard(event) {
         droppableBelow.append(card)
         droppableBelow.removeChild(droppableBelow.querySelector('.new-card'))
         oldColumn.removeChild(oldColumn.querySelector('.old-card'))
-        document.removeEventListener('mousemove', onMouseMove);
-        document.onmouseup = null;
-        document.removeEventListener('mouseup',onMouseUp)
+        document.removeEventListener('pointermove', onMouseMove);
+        document.onpointerup = null;
+        document.removeEventListener('pointerup',onMouseUp)
         card.classList.remove('draggable')
     }
-    document.addEventListener('mouseup',onMouseUp);
+    document.addEventListener('pointerup',onMouseUp);
     
 
     document.ondragstart = function() {
         return false;
     }; 
+    
 }
 
-document.addEventListener('mousedown', draggableCard)
+document.addEventListener('pointerdown', draggableCard)
