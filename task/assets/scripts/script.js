@@ -98,4 +98,4 @@ function draggableCard(event) {
     
 }
 
-document.addEventListener('pointerdown', draggableCard)
+document.addEventListener('pointerdown', draggableCard,{passive:true})

@@ -208,7 +208,7 @@
 .wrapper-columns {
     overflow-x: scroll;
     position: relative;
-    touch-action: none;
+    
 }
 
 .wrapper-columns .wrapper-columns__item:not(:last-child):not(:first-child) {
